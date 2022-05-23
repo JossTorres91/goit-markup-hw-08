@@ -1,0 +1,67 @@
+@import'../utils/variables.scss';
+.encabezado{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid map-get($colores,'bordeencabezado' );
+    &__navegación{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 215px;
+        margin-right: 153px;
+    }
+    &__link{
+        font-family: map-get($fuentes, 'roboto' );
+        color: map-get($colores, 'textooscuro' );
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.17;
+        font-style: normal;
+        text-decoration: none;
+        &:hover,&:focus{
+            color: map-get($colores,'azulclaro' );
+        }
+        &--activo{
+            font-family: map-get($fuentes,'roboto' );
+            color: map-get($colores,'azulclaro' );
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.17;
+            font-style: normal;
+            text-decoration: none;
+            padding-top: 32px;
+            &::after{
+                display: flex;
+                content: "";
+                border: 2px solid map-get($colores, 'azulclaro' );
+                margin-top: 28px;
+                border-radius: 2px;
+            }
+        }
+    }
+    &__contactos{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 215px;
+        margin-left: 153px;
+    }
+    &__email,&__telefono{
+        font-family: map-get($fuentes,'roboto' );
+        color:map-get($colores,'textoclaro' );
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.17;
+        font-style: normal;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        &:hover,&:focus{
+            color: map-get($colores,'azulclaro' );
+            fill: map-get($colores,'azulclaro' );
+        }
+    }
+}
