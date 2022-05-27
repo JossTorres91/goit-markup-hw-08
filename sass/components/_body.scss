@@ -4,7 +4,8 @@
     padding: 0px;
 }
 body{
-    width: 1600px;
+    max-width: 1600px;
+    min-width: 320px;
     color: map-get($colores,'textooscuro');
     font-family: map-get($fuentes,'roboto');
 }
@@ -17,7 +18,7 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 1200px;
+    width: 75%;
 }
 .section{
     width: 100%;
