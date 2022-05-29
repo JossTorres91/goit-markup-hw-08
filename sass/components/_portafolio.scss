@@ -12,6 +12,7 @@
     border: none;
     border: 4px;
     padding: 6px 24px;
+    margin-top: 10px;
     cursor: pointer;
     &:hover,&:focus{
         color: map-get($colores,'blanco' );
@@ -22,22 +23,15 @@
     }
 }
 .portafolio{
-    &__fila1,&__fila2{
-        width: 100%;
+    &__contenido{
         display: flex;
-        justify-content: space-between;
-        padding-bottom: 30px;
-    }
-    &__fila3{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
     }
     &__datos{
         width: 370px;
         height: 410.5px;
         overflow: hidden;
         border: 1px solid #eee;
+        cursor: pointer;
         &:hover{
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
             0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -84,5 +78,128 @@
         color: map-get($colores,'blanco');
         transform: translateY(0px);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+@media screen and (min-width:1500px) {
+ .portafolio{
+        &__contenido {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__fila1{
+            margin: 30px 0;
+        }
+    }        
+}
+@media screen and (min-width:1200px) and (max-width:1499px) {
+    .portafolio{
+        &__contenido{
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 70px;
+        }
+        &__fila2{
+            margin: 30px 0;
+            &--tope{
+                margin-top: 30px;
+            }
+            &--fondo{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .portafolio{
+        &__contenido{
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0;
+        }
+        &__datos,&__imagen,&__foto,&__ventana{
+            width: 354px;
+        }
+        &__fila2{
+            margin: 30px 0;
+        }
+    }
+}
+@media screen and(min-width:1130px) and (max-width:1199px) {
+    .portafolio{
+        &__fila1{
+            margin: 30px 0;
+        }
+    }
+}
+@media screen and(min-width:900px)and(max-width:1129px) {
+    .portafolio{
+        &__contenido{
+            padding: 0 70px;
+        }
+        &__fila1{
+            margin: 0;
+        }
+        &__fila2{
+            margin: 30px 0;
+            &--tope{
+                margin-top: 30px;
+            }
+            &--fondo{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media screen and(min-width:768px)and(max-width:899px) {
+    .portafolio{
+        &__contenido{
+            padding: 0;
+        }
+        &__fila1{
+            margin: 0;
+        }
+        &__fila2{
+            margin: 30px 0;
+            &--tope{
+                margin-top: 30px;
+            }
+            &--fondo{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media screen and(min-width:480px) and (max-width:767px){
+    .portafolio{
+        &__contenido{
+            flex-direction: column;
+        }
+        &__datos,&__foto,&__ventana,&__imagen{
+            width: 450px;
+        }
+        &__fila3{
+            margin-top: 30px;
+            &--fondo{
+                margin: 30px 0;
+            }
+        }
+    }
+}
+@media (max-width:479px){
+    .portafolio{
+        &__contenido{
+            flex-direction: column;
+        }
+        &__datos,&__foto,&__ventana,&__imagen{
+            width: 314px;
+        }
+        &__fila3{
+            margin-top: 30px;
+            &--fondo{
+                margin: 30px 0;
+            }
+        }
     }
 }
