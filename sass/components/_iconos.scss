@@ -87,15 +87,21 @@
         fill: map-get($colores,'blanco' );
     }
 }
-@media screen and(min-width:480px)and(max-width:767px){
+
+@media screen and (max-width:767px){
     .encabezado{
         &__iconoemail,&__iconotelefono{
             display: none;
         }
-    }
-}
-@media screen and (max-width:767px){
-    .encabezado{
+        &__iconocerrar{
+            width: 19px;
+            height: 19px;
+            fill: map-get($colores,'textooscuro' );
+            cursor: pointer;
+            &:hover{
+                fill: map-get($colores,'azulclaro' );
+            }
+        }
         &__iconomenu{
             display: flex;
             width: 24px;
