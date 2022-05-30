@@ -20,11 +20,13 @@
   <body>
     <div class="modal__backdrop is-hidden" data-modal id="backdrop">
       <div class="modal__ventana">
-        <button data-modal-close class="btn btn__cerrar">
-          <svg class="modal__iconocerrar">
-            <use xlink:href="images/icons.svg#icon-vector"></use>
-          </svg>
-        </button>
+        <div class="modal__cerrar">
+          <button data-modal-close class="btn btn__cerrar">
+            <svg class="modal__iconocerrar">
+              <use xlink:href="images/icons.svg#icon-vector"></use>
+            </svg>
+          </button>
+        </div>
         <div class="modal__contenido">
           <h2 class="modal__titulo">
             Deje sus datos, nos contactaremos con usted
@@ -147,7 +149,7 @@
       </div>
       <div class="container">
         <div class="caracteristicas">
-          <div class="caracteristicas__seccion">
+          <div class="caracteristicas__seccion caracteristicas__margen2">
             <div class="caracteristicas__icono">
               <svg class="caracteristicas__icono-antena">
                 <use xlink:href="images/icons.svg#icon-antena"></use>
@@ -159,7 +161,7 @@
               para así desarrollar una solución a su medida.
             </p>
           </div>
-          <div class="caracteristicas__seccion">
+          <div class="caracteristicas__seccion caracteristicas__margen1">
             <div class="caracteristicas__icono">
               <svg class="caracteristicas__icono-reloj">
                 <use xlink:href="images/icons.svg#icon-reloj"></use>
@@ -172,7 +174,7 @@
               los plazos acordados.
             </p>
           </div>
-          <div class="caracteristicas__seccion">
+          <div class="caracteristicas__seccion caracteristicas__margen2">
             <div class="caracteristicas__icono">
               <svg class="caracteristicas__icono-diagrama">
                 <use xlink:href="images/icons.svg#icon-diagrama"></use>
@@ -200,8 +202,9 @@
         <div class="quehacemos">
           <h2 class="quehacemos__titulo">A qué nos dedicamos</h2>
           <div class="quehacemos__imagenes">
-            <div class="quehacemos__foto">
+            <div class="quehacemos__foto quehacemos__margen1">
               <img
+                class="quehacemos__imagen"
                 src="images/pic01hw01.jpg"
                 alt="image 01 homework01"
                 width="370"
@@ -213,6 +216,7 @@
             </div>
             <div class="quehacemos__foto">
               <img
+                class="quehacemos__imagen"
                 src="images/pic02hw01.jpg"
                 alt="image 02 homework01"
                 width="370"
@@ -222,6 +226,7 @@
             </div>
             <div class="quehacemos__foto">
               <img
+                class="quehacemos__imagen"
                 src="images/pic03hw01.jpg"
                 alt="image 03 homework01"
                 width="370"
@@ -236,7 +241,7 @@
         <div class="container">
           <h2 class="equipo__titulo">Nuestro Equipo</h2>
           <div class="equipo__datos">
-            <figure class="equipo__imagenes">
+            <figure class="equipo__imagenes equipo__margen2">
               <img
                 src="images/pic04hw01.jpg"
                 alt="image 04 homework 01"
@@ -270,7 +275,7 @@
                 </div>
               </figcaption>
             </figure>
-            <figure class="equipo__imagenes">
+            <figure class="equipo__imagenes equipo__margen1">
               <img
                 src="images/pic05hw01.jpg"
                 alt="image 05 homework 01"
@@ -304,7 +309,7 @@
                 </div>
               </figcaption>
             </figure>
-            <figure class="equipo__imagenes">
+            <figure class="equipo__imagenes equipo__margen2">
               <img
                 src="images/pic06hw01.jpg"
                 alt="image 06 homework 01"
@@ -400,7 +405,7 @@
                   <use xlink:href="images/icons.svg#icon-logo04"></use>
                 </svg>
               </div>
-              <div class="clientes__iconos">
+              <div class="clientes__iconos clientes__margen1">
                 <svg class="clientes__logo05">
                   <use xlink:href="images/icons.svg#icon-logo05"></use>
                 </svg>
